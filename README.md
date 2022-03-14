@@ -1,6 +1,6 @@
 # Serializer
 
-> A crude C++17 & \u2191-wards header-only library for data structure serialization.
+> A crude C++17 & &#x2191-wards header-only library for data structure serialization.
 
 [![Release version](https://img.shields.io/github/v/release/makuke1234/Serializer?display_name=release&include_prereleases)](https://github.com/makuke1234/Serializer/releases/latest)
 [![Total downloads](https://img.shields.io/github/downloads/makuke1234/Serializer/total)](https://github.com/makuke1234/Serializer/releases)
