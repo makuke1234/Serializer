@@ -5,15 +5,18 @@
 #include <istream>
 
 #if __cplusplus > 201703L
-	#include <concepts>
+
+#include <concepts>
+namespace slzr
+{
 	template<typename T, typename U>
 	concept HelperConcept = requires (T a, std::size_t b)
 	{
 		{ a.get(b) } -> std::convertible_to<std::pair<const void *, std::size_t> >;
 		{ a.put(b) } -> std::convertible_to<std::pair<void *, std::size_t> >;
 	} && std::is_constructible_v<T, U &>;
-#else
-	#define HelperConcept typename
+}
+
 #endif
 
 namespace slzr
